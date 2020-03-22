@@ -1,4 +1,4 @@
-DATA_DIR=${HOME}/data
+DATA_DIR=/tmp/docker-data
 POSTGRES_PASSWORD=test
 POSTGRES_USER=test
 POSTGRES_DATABASE=test
