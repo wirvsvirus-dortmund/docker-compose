@@ -1,6 +1,18 @@
+# this is where all data will be stored
+# might need to create this first and run `chmod -R 777` to make it writable
+# for the users inside the docker containers
 DATA_DIR=/path/to/data/dir
+
+# choose any values to your liking here, will be created on first start
+# of the database container
 POSTGRES_PASSWORD=
 POSTGRES_USER=
 POSTGRES_DATABASE=
+
+# secret key for the app, should be cryptographically secure random data
+# for actual deployment, e.g. `head -c 32 | base64`
 SECRET_KEY=
+
+# exposed port on localhost, go visit http://localhost:8080 after you
+# ran docker-compose up --build -d
 FRONTEND_PORT=8080
