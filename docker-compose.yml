@@ -21,6 +21,8 @@ services:
     environment:
       - SECRET_KEY
       - DATABASE_URI=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database/${POSTGRES_DATABASE}
+      - MAIL_SENDER
+      - MAIL_SERVER
     expose:
       - 5000
     depends_on:
