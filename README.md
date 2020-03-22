@@ -3,7 +3,7 @@
 Deployment using docker-compose
 
 
-1. Have this repo chacked out in the same directory as frontend and backend, e.g. like this
+1. Have this repo checked out in the same directory as frontend and backend, e.g. like this
     ```
     $ mkdir supermarkt && cd supermarkt
     $ git clone https://github.com/wirvsvirus-dortmund/frontend 
