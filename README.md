@@ -1,4 +1,4 @@
-# docker-compose
+# docker-compose [![Build Status](https://travis-ci.com/wirvsvirus-dortmund/docker-compose.svg?branch=master)](https://travis-ci.com/wirvsvirus-dortmund/docker-compose)
 
 Deployment using docker-compose
 
