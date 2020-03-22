@@ -8,6 +8,8 @@ install:
   - git clone --depth=1 https://github.com/wirvsvirus-dortmund/backend ../backend
   - git clone --depth=1 https://github.com/wirvsvirus-dortmund/frontend ../frontend
   - cp ci/travis-env .env
+  - mkdir /tmp/docker-data
+  - chmod -R 777 /tmp/docker-data
 
 script:
   - docker-compose up -d --build
