@@ -13,5 +13,5 @@ install:
 
 script:
   - docker-compose up -d --build
-  - timeout 60 docker-compose logs --follow
+  - (timeout 60 docker-compose logs --follow; exit 0)
   - docker-compose down
