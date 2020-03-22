@@ -1,0 +1,15 @@
+language: generic
+
+
+services:
+  - docker
+
+install:
+  - git clone --depth=1 https://github.com/wirvsvirus-dortmund/backend ../backend
+  - git clone --depth=1 https://github.com/wirvsvirus-dortmund/frontend ../frontend
+  - cp ci/travis-env .env
+
+script:
+  - docker-compose up -d --build
+  - timeout 60 docker-compose logs --follow
+  - docker-compose down
