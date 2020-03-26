@@ -1,6 +1,13 @@
+---
 version: '3'
 
 services:
+  nginx-dev:
+    image: nginx
+    volumes:
+      - ./nginx-dev.conf:/etc/nginx/conf.d/default.conf
+    network_mode: host
+
   database:
     image: postgres:11.7
     restart: unless-stopped
